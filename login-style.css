@@ -28,9 +28,7 @@ body {
 .overlay {
     position: fixed;
     inset: 0;
-    background: linear-gradient(90deg,
-            rgba(3, 6, 17, .45),
-            rgba(3, 6, 32, .35));
+    background: linear-gradient(90deg, rgba(3, 6, 17, 0.408), rgba(3, 6, 32, 0.342));
 }
 
 .grid {
@@ -77,4 +75,113 @@ body {
     font-size: 2.6rem;
     font-weight: 800;
     margin-bottom: 38px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.input-box {
+    height: 66px;
+    border-radius: 18px;
+    background: rgba(8, 13, 30, .9);
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: .3s;
+}
+
+.input-box:focus-within {
+    border-color: #5d79ff;
+    box-shadow: 0 0 24px rgba(79, 111, 255, .25);
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.input-box input::placeholder {
+    color: #d4dcff;
+}
+
+.input-box i {
+    color: #8ea2ff;
+}
+
+.remember-row {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    color: #edf1ff;
+}
+
+.primary-btn,
+.secondary-btn {
+    height: 60px;
+    border: none;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary-btn {
+    background: linear-gradient(180deg, #6482ff, #365cff);
+    color: white;
+    box-shadow: 0 0 24px rgba(79, 111, 255, .35);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: white;
+}
+
+.forgot-link {
+    text-align: center;
+    text-decoration: none;
+    color: #edf1ff;
+}
+
+.socials {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.socials a {
+    text-decoration: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: rgba(8, 13, 30, .92);
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    transition: .3s;
+}
+
+.socials a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 24px rgba(79, 111, 255, .32);
 }
