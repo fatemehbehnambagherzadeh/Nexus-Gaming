@@ -1,0 +1,44 @@
+:root {
+    --card: rgba(12, 18, 42, .72);
+    --border: rgba(141, 157, 255, .18);
+    --text: #edf1ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+    direction: rtl;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #050816;
+}
+
+.bg-image {
+    position: fixed;
+    inset: 0;
+    background: url('assets/space-bg.jpg') center/cover no-repeat;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(3, 6, 17, .45),
+            rgba(3, 6, 32, .35));
+}
+
+.grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: .18;
+}
